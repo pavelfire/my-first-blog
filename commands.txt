@@ -29,3 +29,34 @@ https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 https://docs.djangoproject.com/en/1.11/topics/http/views/
 
 Ctrl + C is stop server
+
+git status
+git add --all .    точка обязательна, означает текущую директорию
+git commit -m "Changed the HTML for the site."
+git push  отправка на github
+
+$ cd ~/pavelfire.pythonanywhere.com
+$ git pull
+переключись на вкладку Web и нажми кнопку Reload.
+
+python manage.py shell
+>>>from blog.models import Post
+>>>Post.objets.all()
+>>> from django.contrib.auth.models import User
+>>> User.objects.all()
+>>> me = User.objects.get(username='admin')
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+>>>Post.objets.all()
+
+>>> Post.objects.filter(author=me)
+Post.objects.filter(title__contains='title')
+
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+
+>>> Post.objects.order_by('created_date')
+>>> Post.objects.order_by('-created_date')
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+exit()
+
+
