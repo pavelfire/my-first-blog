@@ -59,4 +59,20 @@ Post.objects.filter(title__contains='title')
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 exit()
 
+$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
+«атем заходим на PythonAnywhere, открываем Bash console и набираем команду:
+PythonAnywhere command-line
+$ cd $USER.pythonanywhere.com
+$ git pull
+[...]
+
+https://www.codecademy.com/learn/learn-java
+
 
