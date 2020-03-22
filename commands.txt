@@ -1,3 +1,4 @@
+python --version
 c:
 cd c:\perflogs
 mye\Scripts\activate
@@ -7,5 +8,24 @@ python manage.py runserver  or python manage.py runserver 0:8000    in browser h
 
 git init
 git status
+//pythonanywhere pavelfire thai файл .gitignore содержит файлы и папки не включенные в индекс
 git add --all
+git commit -m "My commit, this is description"
 
+//связываем локальный репозиторий с github Gihubm
+git remote add origin https://github.com/pavelfire/my-first-blog.git
+git push -u origin master
+
+bash on pythonanywhere
+
+pip3.6 install --user pythonanywhere
+pa_autoconfigure_django.py https://github.com/pavelfire/my-first-blog.git
+
+//безопасность при публикации сайта
+https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+
+изменять код локально, загружать изменения на GitHub, а затем подтягивать изменения на сервер с сайтом
+
+https://docs.djangoproject.com/en/1.11/topics/http/views/
+
+Ctrl + C is stop server
