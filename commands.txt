@@ -1,0 +1,11 @@
+c:
+cd c:\perflogs
+mye\Scripts\activate
+python manage.py runserver  or python manage.py runserver 0:8000    in browser http://127.0.0.1:8000/
+
+
+
+git init
+git status
+git add --all
+
