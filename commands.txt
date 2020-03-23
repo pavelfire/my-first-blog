@@ -74,5 +74,6 @@ $ git pull
 [...]
 
 https://www.codecademy.com/learn/learn-java
-
+https://github.com/pavelfire/my-first-blog
+https://docs.djangoproject.com/en/3.0/intro/tutorial01/
 
