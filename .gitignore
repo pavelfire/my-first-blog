@@ -1,6 +1,7 @@
 *.pyc
 *~
 __pycache__
+myvenv
 mye
 Python35
 db.sqlite3

@@ -77,3 +77,33 @@ https://www.codecademy.com/learn/learn-java
 https://github.com/pavelfire/my-first-blog
 https://docs.djangoproject.com/en/3.0/intro/tutorial01/
 
+d:
+cd d:\python
+python -m venv myvenv #создание виртуального пространства
+myvenv\Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt  #inside txt: Django~=2.2.4
+python manage.py runserver
+python manage.py createsuperuser
+
+
+
+
+
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Django
+
+https://proglib.io/p/learn-django
+
+https://geekbrains.ru/professions/python_developer?utm_source=proglib&utm_medium=cpm&utm_campaign=proglib_cpm_lp_prof_python_developer_prog&utm_content=header
+
+
+02 04 2020
+git init #в новой пустой папке
+git pull https://github.com/pavelfire/my-first-blog.git
+python -m venv myvenv
+myvenv|Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt #inside txt: Django~=2.2.4
+python manage.py runserver
+
+
